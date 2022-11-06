@@ -3,27 +3,121 @@
   <head>
     <!-- content for the browser -->
     <title>My First Webpage</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400&display=swap');
+      body {
+        background-color: #d6d1b1;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        /* comment */ 
+      }
+
+      .font-div {
+        font-size: 40px;
+      }
+
+      .font-div p {
+        font-size: 1em;
+        color: blue;
+      }
+
+      .red-para {
+        color: red;
+      }
+
+      #para {
+        color: blue;
+        border: 1px solid red;
+        padding: 20px;
+        margin: 20px;
+        /* width: 50%; */
+      }
+
+      a {
+        display: block;
+      }
+
+      #first-heading {
+        display: inline;
+      }
+
+      #second-heading {
+        display: inline;
+      }
+
+      .navbar {
+        display: block;
+        /* margin: 10px 10px 5px 0px;*/ /*top right bottom left */
+        padding: 10px 10px 5px 0px
+      }
+
+      .nav-element {
+        display: inline-block;
+        text-decoration: none;
+        border: 1px solid red;
+        padding: 8px;
+        color: blue;
+        border-radius: 10px;
+      }
+
+      .nav-element:hover {
+        /* color: white; */
+        background-color: brown;
+        /* text-decoration: underline; */
+      }
+
+      .nav-element:visited {
+        color: blue;
+      }
+
+      #vidnav {
+        float: right;
+      }
+
+
+    </style>
   </head>
   <body>
+    <header>
+      <nav class="navbar">
+        <a class="nav-element" href="#" target="_blank">Home</a>
+        <a class="nav-element" href="#" target="_blank">About</a>
+        <a class="nav-element" href="#" target="_blank">Contact Us</a>
+        <a id="vidnav" class="nav-element" href="#vid">Video</a>
+      </nav>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 
     <!-- content to display to the user -->
     <!-- block elements always try to start on a new line -->
     <!-- inline elements usually maintain the same line as much as possible -->
     <!-- inline-block is in-between -->
     <!-- headings -->
-    <h1>My first heading</h1>
-    <h2>My second heading</h2>
+    <h1 id="first-heading">My first heading</h1>
+    <h2 id="second-heading">My second heading</h2>
     <h3>My third heading</h3>
     <h4>My fourth heading</h4>
     <h5>My fifth heading</h5>
     <h6>My sixth heading</h6>
 
+    <div class="font-div">
+      <p>this is the font div</p>
+    </div>
 
+
+    <div class="font-div">
+      <p>this is the font div</p>
+    </div>
     <!-- paragraph -->
     <p title="hello this para">Hi, this is my first webpage elnanoon <br>
       enan eonae one noa oene one onaeinaeone ina oe <br>
       oaneoaemo eaonfpaa e</p>
-    <p><strong>Nice to meet you</strong></p>
+    <p class="red-para" id="para"><strong>Nice to meet you</strong></p>
     <p><em>Hello welcome</em></p>
 
     <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_log.svg/800px-International_Pok%C3%A9mon_logo.svg.png" alt="pokemon image"> -->
@@ -99,7 +193,7 @@
     </form>
 
     <br>
-    <video src="media/videos/video.mp4" width="400" loop controls></video>
+    <video id="vid" src="media/videos/video.mp4" width="500" loop controls></video>
 
 
 
@@ -109,8 +203,6 @@
    - an h2 tag
    - a p tag
    - a br tag -->
-
-  
    <!-- Further extending our me page 30 mins-->
    <!-- Add links on your me page, to your 
    - twitter account
@@ -123,12 +215,26 @@
    - table of 5 mammals and the names of their offspring
   -->
 
+  <!-- 25 mins
+  Style the me.html webpage from our exercises yesterday
+  and add the following criteria:
+  body - different color
+  para - Should be a specific color
+  headers - should have a different color from paragraphs
+  add an image to your me.html file and style the image width inside the css and remove it from the html
+ -->
+
   <!-- 30 mins
     Create a form that will contain the following fields and elements
     fields: name, age, password, city, subscribe, submit button
                                   | .     | 
                                select    checkbox 
    -->
+
+  <!-- 
+
+   -->
+
 
 
   <marquee>HELLO!!!!!!! Look out!!!!!!!</marquee>
