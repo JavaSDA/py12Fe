@@ -1,0 +1,41 @@
+/* #083A4B */
+
+.orange-bg {
+  background-color: orange;
+}
+
+.heading-text {
+  text-align: left;
+}
+
+.form-div {
+  background-color: #083A4B;
+  text-align: center;
+  width: 50%;
+  /* padding: 10xp */
+}
+
+.form-div label {
+  color: yellow;
+}
+
+.form-control {
+  margin-top: 10px;
+}
+
+.actions {
+  text-align: right;
+}
+
+.actions .submit {
+  /* color: white; */
+  background-color: lime;
+  padding: 10px;
+}
+
+.actions .cancel {
+  /* color: white; */
+  background-color: red;
+  padding: 10px;
+}
+
