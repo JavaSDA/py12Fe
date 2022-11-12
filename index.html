@@ -4,6 +4,7 @@
     <!-- content for the browser -->
     <title>My First Webpage</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   </head>
   <body>
     <header>
@@ -46,7 +47,7 @@
     <p title="hello this para">Hi, this is my first webpage elnanoon <br>
       enan eonae one noa oene one onaeinaeone ina oe <br>
       oaneoaemo eaonfpaa e</p>
-    <p class="red-para" id="para"><strong>Nice to meet you</strong></p>
+    <p class="red-para" id="para">Hello, <strong>Nice to meet you</strong></p>
     <p><em>Hello welcome</em></p>
 
     <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_log.svg/800px-International_Pok%C3%A9mon_logo.svg.png" alt="pokemon image"> -->
@@ -164,11 +165,26 @@
 
    -->
 
+   <p id="root"></p>
 
 
   <marquee>HELLO!!!!!!! Look out!!!!!!!</marquee>
   <br>
   <br>
-   11:41 - 12:21
+   <script>
+    var para = document.getElementById('root');
+    var fontDivs = document.getElementsByClassName('red-para');
+    para.innerHTML = fontDivs[0].innerHTML;
+    para.innerText = "Hello, nice to meet you";
+    if (para.innerText === "Hello, nice to meet you") {
+      para.style = 'color: red; padding: 10px; border: 1px solid red;';
+    }
+
+
+    var getParagraphs = document.getElementsByTagName('p');
+    console.log(getParagraphs);
+
+
+   </script>
   </body>
 </html>

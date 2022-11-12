@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <p id="root">
+    Hello Everyone!
+  </p>
+
+  <script>
+    var paragraph = document.getElementById('root');
+    // paragraph.innerText = "Hello World!";
+    paragraph.innerHTML = `<span style="color: red"> My first javascript code</span>`;
+
+    
+    // Javascript single line comment
+    /* Multi line comment*/
+
+    // Arithmetic symbols
+    // +, -, *, /, %
+
+    // Comparison operators
+    // >, <, >=, <=, !=, !==, ==, ===
+
+    // Logical operators
+    // and - &&, or - ||
+
+    // let, const
+    let a = 0;
+    a = 5;
+
+    if (a == 5) {
+      var b = 5;
+      console.log(c);
+      if (b == 5) {
+        var c = 6;
+      }
+    }
+    // console.log(b); // print equivalent in python
+    let stringVar = 'some string'
+    let check = true;
+    let arr = ['syn', 2, true];
+    let obj = {
+      1: ['hello'],
+      'wagwan': 'my bro',
+    };
+
+    // Datatypes
+    // number
+    // string
+    // boolean
+    // Array - equivalent of lists in python
+    // Objects - dictionary equivalent
+
+    // Arrays
+    let arr1 = [2, 3, 6, 9];
+    // Indexing in javascript arrays start from 0;
+    // console.log(arr1[0]); // Element at the first position
+    // console.log(arr1[1]); // Element at the second position
+
+    const findNumber = (arr, target) => {
+      for (let i = 0; i < arr.length; i++) {
+        if (arr[i] == target) {
+          console.log(arr[i]);
+        }
+      }
+    }
+
+    const findAlphabet = function() {}
+    // findNumber(arr1, 2);
+
+    // 20 mins.
+    // Write a function to generate the fibonacci sequence up to 
+    // 50.
+    let firstNumber = 0;
+    let secondNumber = 1;
+    let previousNumber = firstNumber + secondNumber;
+    let currentNumber = previousNumber + secondNumber;
+    let numbers = [firstNumber, secondNumber, previousNumber, currentNumber];
+
+    for (let i = 0; currentNumber < 50; i++) {
+      let temp = currentNumber; // save the current value that we have
+      currentNumber = previousNumber + currentNumber; // add the current Number with the previous one
+      previousNumber = temp; // store the old current number as the new previous
+      numbers.push(currentNumber); // currentNumber 
+    }
+
+    // for (let number of numbers) {
+    //   console.log(number);
+    // }
+
+    // 30 mins
+    // FizzBuzz - 
+    // Write a function that prints from 1 to 100 
+    // with these constrainsts. If:
+    // a number is divisible by 3 replace it with Fizz
+    // a number is divisible by 5 replace it with Buzz
+    // a number is divisible by both 3 and 5 replace it with FizzBuzz
+    // a number isn't divisble by 3 and 5 just print it out.
+
+    // map, filter, 
+
+    // filter array method
+    numbers = numbers.filter((x) => { // arrow function
+      return x < 10;
+    });
+
+
+    // console.log(numbers);
+
+
+
+
+  </script>
+</body>
+
+</html>

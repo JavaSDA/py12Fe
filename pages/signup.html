@@ -24,7 +24,7 @@
       <div class="orange-bg heading-text">
         <p>Sign Up</p>
       </div>
-      <form method="post">
+      <form onsubmit="event.preventDefault(); changeColor()" method="post">
         <div class="form-control">
           <label for="fName">First Name: </label>
           <input placeholder="First Name" type="text" name="fName" id="fName">
@@ -90,7 +90,7 @@
         </div>
 
         <div class="form-control actions orange-bg">
-          <button class="submit">Submit</button>
+          <button id="submit"  class="submit">Submit</button>
           <button class="cancel">Cancel</button>
         </div>
       </form>
@@ -99,5 +99,16 @@
   <footer>
     <p>&#169; Uche company 2023</p>
   </footer>
+
+  <script>
+    const submitButton = document.getElementById('submit');
+
+    const colors = ['red', 'blue', 'green'];
+    function changeColor() {
+      const color = colors[Math.floor(Math.random() * colors.length)];
+      const fontColor = colors[Math.floor(Math.random() * colors.length)];
+      submitButton.style = `background-color: ${color}; color: ${fontColor}`;
+    }
+  </script>
 </body>
 </html>
